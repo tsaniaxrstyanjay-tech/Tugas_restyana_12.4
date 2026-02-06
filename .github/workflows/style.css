@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); /* Warna Peach Soft */
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background: #fff;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(255, 121, 121, 0.2);
+    overflow: hidden;
+    border: 8px solid #fff5f5;
+}
+
+/* Header */
+.profile-header {
+    background-color: #ff9a9e; /* Pink Soft */
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.profile-header h1 {
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    font-weight: 300;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Konten */
+.main-content {
+    padding: 30px;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #ff758c; /* Pink Tua */
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffecd2;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p, li {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Timeline Pendidikan */
+.timeline p span {
+    background: #ffd1d1;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #d63384;
+    margin-right: 10px;
+}
+
+/* List Organisasi */
+ul {
+    list-style: none;
+}
+
+ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+ul li::before {
+    content: "🌸";
+    position: absolute;
+    left: 0;
+}
+
+/* Medsos */
+.social-media {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: white;
+    background: #ff758c;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.social-media a:hover {
+    background: #ff9a8b;
+    transform: scale(1.05);
+}
+
+/* Responsif untuk HP */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
